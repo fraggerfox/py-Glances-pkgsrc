@@ -6,7 +6,7 @@ CATEGORIES=	sysutils python
 MASTER_SITES=	${MASTER_SITE_PYPI:=G/Glances/}
 
 MAINTAINER=	fox@NetBSD.org
-HOMEPAGE=	https://github.com/nicolargo/glances
+HOMEPAGE=	https://nicolargo.github.io/glances/
 COMMENT=	Cross-platform curses-based monitoring tool
 LICENSE=	gnu-lgpl-v3
 
