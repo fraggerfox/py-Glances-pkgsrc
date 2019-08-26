@@ -21,6 +21,5 @@ SUBST_MESSAGE.prefix=	Set correct prefix in bsd.cmake
 SUBST_FILES.prefix=	${WRKSRC}/setup.py
 SUBST_VARS.prefix=	PREFIX
 
-.include "../../lang/python/application.mk"
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
