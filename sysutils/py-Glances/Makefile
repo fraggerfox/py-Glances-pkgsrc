@@ -15,6 +15,8 @@ DEPENDS+=	${PYPKGPREFIX}-future-[0-9]*:../../devel/py-future
 DEPENDS+=	${PYPKGPREFIX}-curses-[0-9]*:../../devel/py-curses
 DEPENDS:=	${PYPKGPREFIX}-cursespanel-[0-9]*:../../devel/py-cursespanel
 
+USE_LANGUAGES=	# none
+
 SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	pre-configure
 SUBST_MESSAGE.prefix=	Set correct prefix in bsd.cmake
