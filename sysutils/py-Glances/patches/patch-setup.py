@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-setup.py,v 1.1 2019/10/10 12:38:40 fox Exp $
 
 Fixes paths of the man page and sample configuration file.
 

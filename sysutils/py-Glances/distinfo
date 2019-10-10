@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.1 2019/10/10 12:38:40 fox Exp $
 
 SHA1 (Glances-3.1.2.tar.gz) = 173a5553336a91ae84c9017988ad3713a13cec08
 RMD160 (Glances-3.1.2.tar.gz) = ecf801eee82a575b06edfaf08a4ba48d77a8d092
