@@ -1,11 +1,9 @@
 py-Glances-pkgsrc
-==========
+=================
 
-NetBSD pkgsrc script for script for `py-Glances`.
+NetBSD [pkgsrc][4] script for Glances.
 
-You can find `Glances` [here][1]
-
-NOTE: This package is not yet available in the pkgsrc tree.
+You can find Glances [here][1]
 
 Installation
 ------------
@@ -31,7 +29,8 @@ NOTE: If you are using pkgsrc in a non NetBSD system, replace `make` with
 Credits
 -------
 
-* `Glances` is developed and maintained by the [Nicolas Hennion][3]
+* Glances is developed and maintained by the [Nicolas Hennion][3]
+* Thanks to `leot@` for reviewing and suggesting fixes to the package.
 
 License
 -------
@@ -41,3 +40,4 @@ BSD 2-clause. See LICENSE.
 [1]: https://nicolargo.github.io/glances/
 [2]: https://github.com/nicolargo/glances#requirements
 [3]: https://sourcerer.io/nicolargo
+[4]: http://pkgsrc.se/sysutils/py-Glances
