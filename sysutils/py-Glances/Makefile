@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2019/10/12 05:35:03 fox Exp $
+# $NetBSD: Makefile,v 1.3 2019/10/16 11:07:57 fox Exp $
 
 DISTNAME=	Glances-3.1.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
