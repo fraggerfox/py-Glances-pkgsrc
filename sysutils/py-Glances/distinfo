@@ -1,7 +1,7 @@
-$NetBSD: distinfo,v 1.16 2021/12/05 11:46:40 fox Exp $
+$NetBSD: distinfo,v 1.21 2023/02/04 16:21:58 fox Exp $
 
-BLAKE2s (Glances-3.2.4.2.tar.gz) = bfa0483181a2baf293df7dcdf81230f55d4fc88aec1e1de0563c3092425de2e7
-SHA512 (Glances-3.2.4.2.tar.gz) = 17502d0bfdc1fc67e3c8f909e229b84fdfd7aa4a971c2c925a8b59f933b29406bfcde6600b5f400506281d2a480f9488f74d6d1b3bd6f20486d7a202819f09b3
-Size (Glances-3.2.4.2.tar.gz) = 6893198 bytes
-SHA1 (patch-glances_plugins_glances__cpu.py) = 0692c14bd8ac79a7a6a4ff7dfe1a6dfc61c8a8c5
-SHA1 (patch-glances_plugins_glances__quicklook.py) = 349a469bd11ad5aaafb264d2689b52d7404b4d62
+BLAKE2s (Glances-3.3.1.1.tar.gz) = d5d1d368195c1a2fb92f2df1ee36ef480948d6b141c6acd1a067e26569bcfb2a
+SHA512 (Glances-3.3.1.1.tar.gz) = 18906cff8a6f2316a561bccea5af4df5ed68461ba7897a80a6016b49ee4a440b9bbf633abbafbcf764c4acc015f763cc05ff032c310cbe6730d21fb2024a256d
+Size (Glances-3.3.1.1.tar.gz) = 6164349 bytes
+SHA1 (patch-glances_plugins_glances__cpu.py) = c23747ee86e3a7d93e2f8072226b089b5cb3376a
+SHA1 (patch-glances_plugins_glances__quicklook.py) = 20478f6097f84a2bcf0688703b5946c76b161779
