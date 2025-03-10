@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2024/11/02 02:47:21 fox Exp $
+# $NetBSD: Makefile,v 1.40 2025/03/05 10:26:24 wiz Exp $
 
-DISTNAME=	glances-4.2.1
+DISTNAME=	glances-4.3.0.8
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/g/G/}
+PKGREVISION=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	${MASTER_SITE_PYPI:=g/glances/}
 
@@ -10,16 +11,23 @@ HOMEPAGE=	https://nicolargo.github.io/glances/
 COMMENT=	Cross-platform curses-based monitoring tool
 LICENSE=	gnu-lgpl-v3
 
-TOOL_DEPENDS+=	${PYPKGPREFIX}-wheel>=0:../../devel/py-wheel
+TOOL_DEPENDS+=	${PYPKGPREFIX}-setuptools>=75.8.2:../../devel/py-setuptools
 DEPENDS+=	${PYPKGPREFIX}-psutil>=5.6.7:../../sysutils/py-psutil
 DEPENDS+=	${PYPKGPREFIX}-defusedxml-[0-9]*:../../textproc/py-defusedxml
 DEPENDS+=	${PYPKGPREFIX}-packaging-[0-9]*:../../devel/py-packaging
 DEPENDS+=	${PYPKGPREFIX}-orjson>=0:../../textproc/py-orjson
+TEST_DEPENDS+=	${PYPKGPREFIX}-requests-[0-9]*:../../devel/py-requests
+TEST_DEPENDS+=	${PYPKGPREFIX}-selenium-[0-9]*:../../www/py-selenium
+# DEPENDS for WebUI/RestFull API
+#TEST_DEPENDS+=	${PYPKGPREFIX}-fastapi-[0-9]*:../../wip/py-fastapi
+#TEST_DEPENDS+=	${PYPKGPREFIX}-uvicorn-[0-9]*:../../www/py-uvicorn
+
+# for testing
+ALLOW_NETWORK_ACCESS=	yes
+# as of 4.3.0.8
+# 35 failed, 35 passed, 2 skipped, 5 errors
 
 USE_LANGUAGES=	# none
-
-PYTHON_VERSIONS_INCOMPATIBLE=	27
-WHEEL_NAME=	Glances-${PKGVERSION_NOREV}
 
 SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	pre-configure
